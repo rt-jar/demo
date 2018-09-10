@@ -41,7 +41,7 @@ public class CycleConfigController {
         cycleConfig.setCycleType(data.get("cycleType"));
         cycleConfig.setOpenTime(data.get("openTime"));
         cycleConfig.setCloseTime(data.get("closeTime"));
-        cycleConfig.setCycleCondition(data.get("condition"));
+        cycleConfig.setCycleCondition(data.get("cycleCondition"));
 
         cycleConfig = cycleConfigRepository.save(cycleConfig);
         logger.info("Saved success : " + cycleConfig.getId());
